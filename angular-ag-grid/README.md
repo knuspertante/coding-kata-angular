@@ -1,27 +1,34 @@
-# AngularAgGrid
+Aufgabe:
+- [ ] Erstelle einen neuen Branch 'demo-20240812'
+- [ ] Definiere eine neue URL 'agGridDemo' die eine Komponenten 'ag-grid-page' im 'pages' Ordner aufruft.
+- [ ] Erstelle in der Komponente 'ag-grid-page' eine Tabelle mit AG-Grid.
+    - [ ] Erstelle einen Service 'grid.service' im Ordner 'shared/services', der die Daten von folgenden Endpunkt konsumiert und der Tabelle zur Verfügung gestellt: https://www.ag-grid.com/example-assets/space-mission-data.json
+    - [ ] Die Tabelle soll dabei folgende Spalten darstellen:
+        - Mission (string) - Filterbar
+        - Company (string) - Filterbar
+        - Location (string) - Filterbar
+        - Date (string)
+        - Time (string)
+        - Rocket (string)
+        - Price (number) - Sortierbar
+        - Successful (boolean) - Filterbar
+    - [ ] verwende als Themeclass 'ag-theme-quartz-dark'
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Offene Fragen:
+- Routes: Was bedeuted Lazy Loading: Vorteile, wann sollte man es einsetzten?
+- Angular Lifecycle
+- AG-Grid Lifecycle
+- Angular Data-Binding (Besonderheiten Signals)
 
-## Code scaffolding
+- Optimierung an der Tabelle
+    - [ ] Pagination
+    - [ ] valueFormatter --> Formatiere Datum nach Locale (Angular Default)
+    - [ ] CustomCellComponents --> Bild https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Fde%2Fsymbol%2FM%25C3%25BCnze-Dollar%2F115160&psig=AOvVaw0fHK6ULxtvBlJ6y9Ygjxv7&ust=1723533927914000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjUqq_27ocDFQAAAAAdAAAAABAJ nach dem Price (Zahl) einfügen.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+Link bzw. Beispiel: https://www.ag-grid.com/angular-data-grid/deep-dive/#configure-the-grid
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+// TODO Themeclass und provideHttpClient hinzugfügen
