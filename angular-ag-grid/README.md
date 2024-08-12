@@ -1,27 +1,15 @@
-# AngularAgGrid
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Aufgabe:
+- [ ] Erstelle einen neuen Branch 'demo-20240812'
+- [ ] Definiere eine neue URL 'agGridDemo' die eine Komponenten 'ag-grid-page' im 'pages' Ordner aufruft.
+- [ ] Erstelle in der Komponente 'ag-grid-page' eine Tabelle mit AG-Grid.
+    - [ ] Erstelle einen Service 'grid.service' im Ordner 'shared/services', der die Daten von folgenden Endpunkt konsumiert und der Tabelle zur Verfügung gestellt: https://www.ag-grid.com/example-assets/space-mission-data.json
+    - [ ] Die Tabelle soll dabei folgende Spalten darstellen:
+        - Mission (string) - Filterbar
+        - Company (string) - Filterbar
+        - Location (string) - Filterbar
+        - Date (string)
+        - Time (string)
+        - Rocket (string)
+        - Price (number) - Sortierbar
+        - Successful (boolean) - Filterbar
+    - [ ] verwende als Themeclass 'ag-theme-quartz-dark'
